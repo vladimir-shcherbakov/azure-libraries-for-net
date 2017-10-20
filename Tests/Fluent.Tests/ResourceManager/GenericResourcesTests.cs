@@ -18,6 +18,7 @@ namespace Fluent.Tests.ResourceManager
     public class GenericResources
     {
         [Fact]
+        [Trait("Fluent", "ResourceManager")]
         public async Task CanCreateUpdateMoveResource()
         {
             using (var context = FluentMockContext.Start(this.GetType().FullName))

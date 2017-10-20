@@ -23,6 +23,7 @@ namespace Fluent.Tests.Graph.RBAC
     {
 
         [Fact]
+        [Trait("Fluent", "Graph.RBAC")]
         public void CanCRUDServicePrincipal()
         {
             using (var context = FluentMockContext.Start(GetType().FullName))
@@ -80,6 +81,7 @@ namespace Fluent.Tests.Graph.RBAC
         }
 
         [Fact(Skip = "Do not record - Can contain sensitive auth info")]
+        [Trait("Fluent", "Graph.RBAC")]
         public void CanCRUDServicePrincipalWithRole()
         {
             using (var context = FluentMockContext.Start(GetType().FullName))

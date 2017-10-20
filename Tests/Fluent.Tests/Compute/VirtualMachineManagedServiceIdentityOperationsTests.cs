@@ -21,6 +21,7 @@ namespace Fluent.Tests.Compute.VirtualMachine
     public class ManagedServiceIdentityOperations
     {
         [Fact]
+        [Trait("Fluent", "Compute")]
         public void CanSetMSIOnNewOrExistingVMWithoutRoleAssignment()
         {
             using (var context = FluentMockContext.Start(GetType().FullName))
@@ -164,6 +165,7 @@ namespace Fluent.Tests.Compute.VirtualMachine
 
 
         [Fact]
+        [Trait("Fluent", "Compute")]
         public void CanSetMSIOnNewVMWithRoleAssignedToCurrentResourceGroup()
         {
             using (var context = FluentMockContext.Start(GetType().FullName))
@@ -254,6 +256,7 @@ namespace Fluent.Tests.Compute.VirtualMachine
         }
 
         [Fact]
+        [Trait("Fluent", "Compute")]
         public void CanSetMSIOnNewVMWithMultipleRoleAssignments()
         {
             using (var context = FluentMockContext.Start(GetType().FullName))
@@ -365,6 +368,7 @@ namespace Fluent.Tests.Compute.VirtualMachine
         }
 
         [Fact]
+        [Trait("Fluent", "Compute")]
         public void CanSetMSIOnExistingVMWithRoleAssignments()
         {
             using (var context = FluentMockContext.Start(GetType().FullName))

@@ -18,6 +18,7 @@ namespace Fluent.Tests.Compute
          */
         // TODO - ans - Does not look like a test. Check with Author and see.
         [Fact(Skip = "TODO: Convert to recorded tests")]
+        [Trait("Fluent", "Compute")]
         public void UnfinishedTest()
         {
             string vnetName1 = SdkContext.RandomResourceName("vnet1", 20);

@@ -19,6 +19,7 @@ namespace Fluent.Tests.Compute.VirtualMachine
         private readonly Region Location = Region.USEast;
 
         [Fact]
+        [Trait("Fluent", "Compute")]
         public void CanCreateImageFromNativeVhd()
         {
             using (var context = FluentMockContext.Start(GetType().FullName))

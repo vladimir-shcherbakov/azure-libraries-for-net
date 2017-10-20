@@ -17,6 +17,7 @@ namespace Samples.Tests
 
         [Fact]
         [Trait("Samples", "Compute")]
+        [Trait("Group", "Compute-2")]
         public void CreateVirtualMachinesInParallelTest()
         {
             using (var context = FluentMockContext.Start(this.GetType().FullName))
@@ -28,6 +29,7 @@ namespace Samples.Tests
 
         [Fact]
         [Trait("Samples", "Compute")]
+        [Trait("Group", "Compute-2")]
         public void CreateVMsUsingCustomImageOrSpecializedVHDTest()
         {
             using (var context = FluentMockContext.Start(this.GetType().FullName))
@@ -39,6 +41,7 @@ namespace Samples.Tests
 
         [Fact]
         [Trait("Samples", "Compute")]
+        [Trait("Group", "Compute-2")]
         public void ListVirtualMachineExtensionImagesTest()
         {
             using (var context = FluentMockContext.Start(this.GetType().FullName))
@@ -50,6 +53,7 @@ namespace Samples.Tests
 
         [Fact]
         [Trait("Samples", "Compute")]
+        [Trait("Group", "Compute-2")]
         public void ListVirtualMachineImagesTest()
         {
             using (var context = FluentMockContext.Start(this.GetType().FullName))
@@ -83,7 +87,8 @@ namespace Samples.Tests
 
         [Fact]
         [Trait("Samples", "Compute")]
-        public void ManageVirtualMachineExtensionTest()
+        [Trait("Group", "Compute-3")]
+       public void ManageVirtualMachineExtensionTest()
         {
             RunSampleAsTest(
                 this.GetType().FullName,
@@ -92,6 +97,7 @@ namespace Samples.Tests
 
         [Fact]
         [Trait("Samples", "Compute")]
+        [Trait("Group", "Compute-3")]
         public void ManageVirtualMachineScaleSetWithUnmanagedDisksTest()
         {
             using (var context = FluentMockContext.Start(this.GetType().FullName))
@@ -103,6 +109,7 @@ namespace Samples.Tests
 
         [Fact]
         [Trait("Samples", "Compute")]
+        [Trait("Group", "Compute-2")]
         public void ManageVirtualMachinesInParallelTest()
         {
             using (var context = FluentMockContext.Start(this.GetType().FullName))
@@ -114,6 +121,7 @@ namespace Samples.Tests
 
         [Fact]
         [Trait("Samples", "Compute")]
+        [Trait("Group", "Compute-3")]
         public void ManageVirtualMachinesInParallelWithNetworkTest()
         {
             using (var context = FluentMockContext.Start(this.GetType().FullName))
@@ -125,6 +133,7 @@ namespace Samples.Tests
 
         [Fact]
         [Trait("Samples", "Compute")]
+        [Trait("Group", "Compute-1")]
         public void CreateVirtualMachineUsingCustomImageFromVHDTest()
         {
             using (var context = FluentMockContext.Start(this.GetType().FullName))
@@ -137,6 +146,7 @@ namespace Samples.Tests
 
         [Fact]
         [Trait("Samples", "Compute")]
+        [Trait("Group", "Compute-1")]
         public void CreateVirtualMachineUsingCustomImageFromVMTest()
         {
             using (var context = FluentMockContext.Start(this.GetType().FullName))
@@ -149,6 +159,7 @@ namespace Samples.Tests
 
         [Fact]
         [Trait("Samples", "Compute")]
+        [Trait("Group", "Compute-1")]
         public void CreateVirtualMachineUsingSpecializedDiskFromSnapshotTest()
         {
             using (var context = FluentMockContext.Start(this.GetType().FullName))
@@ -161,6 +172,7 @@ namespace Samples.Tests
 
         [Fact]
         [Trait("Samples", "Compute")]
+        [Trait("Group", "Compute-1")]
         public void CreateVirtualMachineUsingSpecializedDiskFromVhdTest()
         {
             using (var context = FluentMockContext.Start(this.GetType().FullName))
@@ -172,6 +184,7 @@ namespace Samples.Tests
 
         [Fact]
         [Trait("Samples", "Compute")]
+        [Trait("Group", "Compute-2")]
         public void ManageVirtualMachineWithDiskTest()
         {
             using (var context = FluentMockContext.Start(this.GetType().FullName))
@@ -183,6 +196,7 @@ namespace Samples.Tests
 
         [Fact]
         [Trait("Samples", "Compute")]
+        [Trait("Group", "Compute-3")]
         public void ConvertVirtualMachineToManagedDisksTest()
         {
             using (var context = FluentMockContext.Start(this.GetType().FullName))
@@ -194,6 +208,7 @@ namespace Samples.Tests
 
         [Fact]
         [Trait("Samples", "Compute")]
+        [Trait("Group", "Compute-2")]
         public void ManageVirtualMachineScaleSetTest()
         {
             using (var context = FluentMockContext.Start(this.GetType().FullName))
@@ -204,7 +219,8 @@ namespace Samples.Tests
         }
 
         [Fact]
-        [Trait("Samples", "Network")]
+        [Trait("Samples", "Compute")]
+        [Trait("Group", "Compute-2")]
         public void ManageVirtualMachineScaleSetTestAsync()
         {
             RunSampleAsTest(
@@ -217,6 +233,7 @@ namespace Samples.Tests
 
         [Fact]
         [Trait("Samples", "Compute")]
+        [Trait("Group", "Compute-3")]
         public void ManageVirtualMachineTest()
         {
             using (var context = FluentMockContext.Start(this.GetType().FullName))
@@ -228,6 +245,7 @@ namespace Samples.Tests
 
         [Fact]
         [Trait("Samples", "Compute")]
+        [Trait("Group", "Compute-3")]
         public void ManageVirtualMachineAsyncTest()
         {
             RunSampleAsTest(
@@ -240,6 +258,7 @@ namespace Samples.Tests
 
         [Fact]
         [Trait("Samples", "Compute")]
+        [Trait("Group", "Compute-3")]
         public void ManageManagedDisksTest()
         {
             using (var context = FluentMockContext.Start(this.GetType().FullName))
@@ -251,6 +270,7 @@ namespace Samples.Tests
 
         [Fact]
         [Trait("Samples", "Compute")]
+        [Trait("Group", "Compute-2")]
         public void ManageContainerServiceUsingDockerSwarmTest()
         {
             using (var context = FluentMockContext.Start(this.GetType().FullName))
@@ -262,6 +282,7 @@ namespace Samples.Tests
 
         [Fact]
         [Trait("Samples", "Compute")]
+        [Trait("Group", "Compute-3")]
         public void ManageContainerServiceUsingKubernetesTest()
         {
             using (var context = FluentMockContext.Start(this.GetType().FullName))
@@ -279,6 +300,7 @@ namespace Samples.Tests
 
         [Fact]
         [Trait("Samples", "Compute")]
+        [Trait("Group", "Compute-2")]
         public void ManageStorageFromMSIEnabledVirtualMachineTest()
         {
             using (var context = FluentMockContext.Start(this.GetType().FullName))
@@ -290,6 +312,7 @@ namespace Samples.Tests
 
         [Fact]
         [Trait("Samples", "Compute")]
+        [Trait("Group", "Compute-3")]
         public void ManageResourceFromMSIEnabledVirtualMachineBelongsToAADGroupTest()
         {
             using (var context = FluentMockContext.Start(this.GetType().FullName))
@@ -301,6 +324,7 @@ namespace Samples.Tests
 
         [Fact]
         [Trait("Samples", "Compute")]
+        [Trait("Group", "Compute-3")]
         public void ManageZonalVirtualMachineTest()
         {
             using (var context = FluentMockContext.Start(this.GetType().FullName))
@@ -312,6 +336,7 @@ namespace Samples.Tests
 
         [Fact]
         [Trait("Samples", "Compute")]
+        [Trait("Group", "Compute-2")]
         public void ManageZonalVirtualMachineScaleSetTest()
         {
             using (var context = FluentMockContext.Start(this.GetType().FullName))

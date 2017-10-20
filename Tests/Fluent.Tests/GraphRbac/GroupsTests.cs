@@ -22,6 +22,7 @@ namespace Fluent.Tests.Graph.RBAC
     {
 
         [Fact]
+        [Trait("Fluent", "Graph.RBAC")]
         public void CanCRUDGroup()
         {
             using (var context = FluentMockContext.Start(GetType().FullName))

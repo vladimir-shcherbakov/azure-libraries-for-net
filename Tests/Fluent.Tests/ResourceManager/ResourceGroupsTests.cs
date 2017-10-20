@@ -14,6 +14,7 @@ namespace Fluent.Tests.ResourceManager
     public class ResourceGroups
     {
         [Fact]
+        [Trait("Fluent", "ResourceManager")]
         public void CanCRUDResourceGroup()
         {
             using (var context = FluentMockContext.Start(this.GetType().FullName))

@@ -15,6 +15,7 @@ namespace Fluent.Tests.WebApp
     public class DeploymentSlots
     {
         [Fact]
+        [Trait("Fluent", "WebApp")]
         public void CanCRUDSwapSlots()
         {
             using (var context = FluentMockContext.Start(this.GetType().FullName))

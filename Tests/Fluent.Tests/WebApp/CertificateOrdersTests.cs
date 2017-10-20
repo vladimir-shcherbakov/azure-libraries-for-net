@@ -15,6 +15,7 @@ namespace Fluent.Tests.WebApp
         private static string CertificateName = "graphdmcert7720";
 
         [Fact(Skip = "Manual only: ($300) Test requires javacsmrg9b9912262 RG to be configured manually")]
+        [Trait("Fluent", "WebApp")]
         public void CanCRUDCertificateOrder()
         {
             using (var context = FluentMockContext.Start(this.GetType().FullName))

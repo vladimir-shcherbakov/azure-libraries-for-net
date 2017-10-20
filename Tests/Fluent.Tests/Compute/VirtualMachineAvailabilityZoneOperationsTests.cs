@@ -20,6 +20,7 @@ namespace Fluent.Tests.Compute.VirtuaMachine
     public class AvailabilityZones
     {
         [Fact]
+        [Trait("Fluent", "Compute")]
         public void CanCreateZonedVMWithImplicitZonedRelatedResources()
         {
             using (var context = FluentMockContext.Start(GetType().FullName))
@@ -85,6 +86,7 @@ namespace Fluent.Tests.Compute.VirtuaMachine
         }
 
         [Fact]
+        [Trait("Fluent", "Compute")]
         public void CanCreateZonedVMWithExplicitZoneForRelatedResources()
         {
             using (var context = FluentMockContext.Start(GetType().FullName))
@@ -194,6 +196,7 @@ namespace Fluent.Tests.Compute.VirtuaMachine
         }
 
         [Fact]
+        [Trait("Fluent", "Compute")]
         public void CanCreateZonedVMWithZoneResilientPublicIP()
         {
             using (var context = FluentMockContext.Start(GetType().FullName))
@@ -419,6 +422,7 @@ namespace Fluent.Tests.Compute.VirtuaMachine
         // }
         // Enable this test once it is fixed. 
         //
+        [Trait("Fluent", "Compute")]
         public void CanCreateZonedVMsAndAssociateThemWithSingleBackendPoolOfZoneResilientLB()
         {
             using (var context = FluentMockContext.Start(GetType().FullName))

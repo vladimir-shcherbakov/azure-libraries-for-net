@@ -14,6 +14,7 @@ namespace Fluent.Tests
     public class CosmosDB
     {
         [Fact]
+        [Trait("Fluent", "CosmosDB")]
         public void CosmosDBCRUD()
         {
             using (var context = FluentMockContext.Start(GetType().FullName))

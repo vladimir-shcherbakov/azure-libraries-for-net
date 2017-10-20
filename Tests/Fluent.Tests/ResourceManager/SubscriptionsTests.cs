@@ -14,6 +14,7 @@ namespace Fluent.Tests.ResourceManager
     public class Subscriptions
     {
         [Fact]
+        [Trait("Fluent", "ResourceManager")]
         public void CanListSubscriptions()
         {
             using (var context = FluentMockContext.Start(this.GetType().FullName))
@@ -27,6 +28,7 @@ namespace Fluent.Tests.ResourceManager
         }
 
         [Fact]
+        [Trait("Fluent", "ResourceManager")]
         public void CanListLocations()
         {
             using (var context = FluentMockContext.Start(this.GetType().FullName))

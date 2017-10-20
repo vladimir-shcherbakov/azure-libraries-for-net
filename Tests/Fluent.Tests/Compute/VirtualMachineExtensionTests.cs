@@ -22,6 +22,7 @@ namespace Fluent.Tests.Compute.VirtualMachine
     public class Extension
     {
         [Fact]
+        [Trait("Fluent", "Compute")]
         public void CanResetPasswordUsingVMAccessExtension()
         {
             using (var context = FluentMockContext.Start(GetType().FullName))
@@ -71,6 +72,7 @@ namespace Fluent.Tests.Compute.VirtualMachine
         }
 
         [Fact]
+        [Trait("Fluent", "Compute")]
         public void CanInstallUninstallCustomExtension()
         {
             using (var context = FluentMockContext.Start(GetType().FullName))
@@ -141,6 +143,7 @@ namespace Fluent.Tests.Compute.VirtualMachine
         }
 
         [Fact]
+        [Trait("Fluent", "Compute")]
         public void CanHandleExtensionReference()
         {
             using (var context = FluentMockContext.Start(GetType().FullName))
@@ -231,6 +234,7 @@ namespace Fluent.Tests.Compute.VirtualMachine
         }
 
         [Fact]
+        [Trait("Fluent", "Compute")]
         public void CanUpdateExtensionPublicPrivateSettings()
         {
             using (var context = FluentMockContext.Start(GetType().FullName))

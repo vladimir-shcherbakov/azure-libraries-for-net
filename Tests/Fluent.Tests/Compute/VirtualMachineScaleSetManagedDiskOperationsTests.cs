@@ -20,6 +20,7 @@ namespace Fluent.Tests.Compute.VirtualMachine
         private readonly Region Location = Region.USEast;
 
         [Fact]
+        [Trait("Fluent", "Compute")]
         public void CanCreateUpdateFromPIRWithManagedDisk()
         {
             using (var context = FluentMockContext.Start(GetType().FullName))
@@ -102,6 +103,7 @@ namespace Fluent.Tests.Compute.VirtualMachine
         }
 
         [Fact]
+        [Trait("Fluent", "Compute")]
         public void CanCreateFromCustomImageWithManagedDisk()
         {
             using (var context = FluentMockContext.Start(GetType().FullName))

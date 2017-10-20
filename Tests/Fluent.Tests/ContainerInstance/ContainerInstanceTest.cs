@@ -14,6 +14,7 @@ namespace Fluent.Tests
     public class ContainerInstanceTest
     {
         [Fact]
+        [Trait("Fluent", "ContainerInstanceTest")]
         public void ContainerRegistryCRD()
         {
             using (var context = FluentMockContext.Start(GetType().FullName))

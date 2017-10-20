@@ -22,6 +22,7 @@ namespace Fluent.Tests.Graph.RBAC
     {
 
         [Fact]
+        [Trait("Fluent", "Graph.RBAC")]
         public void CanGetUserByEmail()
         {
             using (var context = FluentMockContext.Start(GetType().FullName))
@@ -33,6 +34,7 @@ namespace Fluent.Tests.Graph.RBAC
         }
 
         [Fact]
+        [Trait("Fluent", "Graph.RBAC")]
         public void CanGetUserByForeignEmail()
         {
             using (var context = FluentMockContext.Start(GetType().FullName))
@@ -44,6 +46,7 @@ namespace Fluent.Tests.Graph.RBAC
         }
 
         [Fact]
+        [Trait("Fluent", "Graph.RBAC")]
         public void CanGetUserByDisplayName()
         {
             using (var context = FluentMockContext.Start(GetType().FullName))
@@ -55,6 +58,7 @@ namespace Fluent.Tests.Graph.RBAC
         }
 
         [Fact]
+        [Trait("Fluent", "Graph.RBAC")]
         public void CanCreateUser()
         {
             using (var context = FluentMockContext.Start(GetType().FullName))
@@ -73,6 +77,7 @@ namespace Fluent.Tests.Graph.RBAC
         }
 
         [Fact]
+        [Trait("Fluent", "Graph.RBAC")]
         public void CanUpdateUser()
         {
             using (var context = FluentMockContext.Start(GetType().FullName))

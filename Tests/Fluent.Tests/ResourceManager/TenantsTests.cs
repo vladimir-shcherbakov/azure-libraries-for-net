@@ -14,6 +14,7 @@ namespace Fluent.Tests.ResourceManager
     {
 
         [Fact]
+        [Trait("Fluent", "ResourceManager")]
         public void CanListTenants()
         {
             using (var context = FluentMockContext.Start(this.GetType().FullName))

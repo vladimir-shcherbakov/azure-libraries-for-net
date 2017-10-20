@@ -15,6 +15,7 @@ namespace Fluent.Tests.WebApp
     public class FunctionApps
     {
         [Fact]
+        [Trait("Fluent", "WebApp")]
         public void CanCRUDFunctionApp()
         {
             using (var context = FluentMockContext.Start(this.GetType().FullName))

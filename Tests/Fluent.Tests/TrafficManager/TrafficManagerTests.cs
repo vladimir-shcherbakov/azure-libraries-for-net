@@ -16,6 +16,7 @@ namespace Fluent.Tests
     public class TrafficManager
     {
         [Fact]
+        [Trait("Fluent", "TrafficManager")]
         public void CanCreateUpdateTrafficManagerProfile()
         {
             using (var context = FluentMockContext.Start(GetType().FullName))
@@ -265,6 +266,7 @@ namespace Fluent.Tests
         }
 
         [Fact]
+        [Trait("Fluent", "TrafficManager")]
         public void CanGetGeographicHierarchy()
         {
             using (var context = FluentMockContext.Start(GetType().FullName))
@@ -282,6 +284,7 @@ namespace Fluent.Tests
         }
 
         [Fact]
+        [Trait("Fluent", "TrafficManager")]
         public void CanCreateUpdateProfileWithGeographicEndpoint()
         {
             using (var context = FluentMockContext.Start(GetType().FullName))

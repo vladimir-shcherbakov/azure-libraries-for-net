@@ -14,6 +14,7 @@ namespace Fluent.Tests
     public class Search
     {
         [Fact]
+        [Trait("Fluent", "Search")]
         public void CanCRUD()
         {
             using (var context = FluentMockContext.Start(GetType().FullName))
@@ -89,6 +90,7 @@ namespace Fluent.Tests
         }
 
         [Fact]
+        [Trait("Fluent", "Search")]
         public void CanCRUDFreeSku()
         {
             using (var context = FluentMockContext.Start(GetType().FullName))
@@ -154,6 +156,7 @@ namespace Fluent.Tests
         }
 
         [Fact]
+        [Trait("Fluent", "Search")]
         public void CanCRUDBasicSku()
         {
             using (var context = FluentMockContext.Start(GetType().FullName))
@@ -206,6 +209,7 @@ namespace Fluent.Tests
         }
 
         [Fact]
+        [Trait("Fluent", "Search")]
         public void CanCRUDStandardSku()
         {
             using (var context = FluentMockContext.Start(GetType().FullName))

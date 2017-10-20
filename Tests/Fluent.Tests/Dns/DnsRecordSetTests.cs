@@ -17,6 +17,7 @@ namespace Fluent.Tests.Dns
     public class RecordSet
     {
         [Fact]
+        [Trait("Fluent", "Dns")]
         public void CanCreateWithDefaultETag()
         {
             using (var context = FluentMockContext.Start(GetType().FullName))
@@ -121,6 +122,7 @@ namespace Fluent.Tests.Dns
         }
 
         [Fact]
+        [Trait("Fluent", "Dns")]
         public void CanUpdateWithExplicitETag()
         {
             using (var context = FluentMockContext.Start(GetType().FullName))
@@ -219,6 +221,7 @@ namespace Fluent.Tests.Dns
         }
 
         [Fact]
+        [Trait("Fluent", "Dns")]
         public void CanDeleteWithExplicitETag()
         {
             using (var context = FluentMockContext.Start(GetType().FullName))

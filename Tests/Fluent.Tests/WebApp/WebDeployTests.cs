@@ -15,6 +15,7 @@ namespace Fluent.Tests.WebApp
     public class WebDeploy
     {
         [Fact]
+        [Trait("Fluent", "WebApp")]
         public void CanDeployBakeryWebApp()
         {
             using (var context = FluentMockContext.Start(this.GetType().FullName))

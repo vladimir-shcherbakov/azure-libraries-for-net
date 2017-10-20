@@ -18,6 +18,7 @@ namespace Fluent.Tests
         private const string endpointOriginHostname = "mylinuxapp.azurewebsites.net";
 
         [Fact]
+        [Trait("Fluent", "Cdn")]
         public void CanCRUDCdn()
         {
             using (var context = FluentMockContext.Start(this.GetType().FullName))

@@ -18,6 +18,7 @@ namespace Fluent.Tests.Compute
         private readonly string Location = Region.USWestCentral.Name;
 
         [Fact]
+        [Trait("Fluent", "Compute")]
         public void CanOperateOnEmptyManagedDisk()
         {
             using (var context = FluentMockContext.Start(GetType().FullName))

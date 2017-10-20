@@ -21,6 +21,7 @@ namespace Fluent.Tests
         private string storageAccountName = "sa733";
 
         [Fact]
+        [Trait("Fluent", "Batch")]
         public async Task CanCRUDBatchAccounts()
         {
             using (var context = FluentMockContext.Start(this.GetType().FullName))
@@ -178,6 +179,7 @@ namespace Fluent.Tests
         }
 
         [Fact]
+        [Trait("Fluent", "Batch")]
         public async Task CanCreateBatchAccountWithApplication()
         {
             using (var context = FluentMockContext.Start(this.GetType().FullName))

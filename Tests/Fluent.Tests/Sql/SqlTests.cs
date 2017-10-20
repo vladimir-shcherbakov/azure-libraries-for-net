@@ -52,6 +52,7 @@ namespace Fluent.Tests
         }
 
         [Fact]
+        [Trait("Fluent", "Sql")]
         public void CanOperateSqlFromRollUpClient()
         {
             using (var context = FluentMockContext.Start(this.GetType().FullName))
@@ -72,6 +73,7 @@ namespace Fluent.Tests
         }
 
         [Fact(Skip = "Manual only: This test require existing SQL server so that there can be recommended elastic pools")]
+        [Trait("Fluent", "Sql")]
         public void CanListRecommendedElasticPools()
         {
             using (var context = FluentMockContext.Start(this.GetType().FullName))
@@ -86,6 +88,7 @@ namespace Fluent.Tests
         }
 
         [Fact]
+        [Trait("Fluent", "Sql")]
         public void CanCRUDSqlServer()
         {
             using (var context = FluentMockContext.Start(this.GetType().FullName))
@@ -129,6 +132,7 @@ namespace Fluent.Tests
         }
 
         [Fact]
+        [Trait("Fluent", "Sql")]
         public void CanUseCoolShortcutsForResourceCreation()
         {
             using (var context = FluentMockContext.Start(this.GetType().FullName))
@@ -336,6 +340,7 @@ namespace Fluent.Tests
         }
 
         [Fact]
+        [Trait("Fluent", "Sql")]
         public void CanCRUDSqlDatabase()
         {
             using (var context = FluentMockContext.Start(this.GetType().FullName))
@@ -432,6 +437,7 @@ namespace Fluent.Tests
         }
 
         [Fact]
+        [Trait("Fluent", "Sql")]
         public void CanManageReplicationLinks()
         {
             using (var context = FluentMockContext.Start(this.GetType().FullName))
@@ -498,6 +504,7 @@ namespace Fluent.Tests
         }
 
         [Fact]
+        [Trait("Fluent", "Sql")]
         public void CanDoOperationsOnDataWarehouse()
         {
             using (var context = FluentMockContext.Start(this.GetType().FullName))
@@ -551,6 +558,7 @@ namespace Fluent.Tests
         }
 
         [Fact]
+        [Trait("Fluent", "Sql")]
         public void CanCRUDSqlDatabaseWithElasticPool()
         {
             using (var context = FluentMockContext.Start(this.GetType().FullName))
@@ -678,6 +686,7 @@ namespace Fluent.Tests
         }
 
         [Fact]
+        [Trait("Fluent", "Sql")]
         public void CanCRUDSqlElasticPool()
         {
             using (var context = FluentMockContext.Start(this.GetType().FullName))
@@ -737,6 +746,7 @@ namespace Fluent.Tests
         }
 
         [Fact]
+        [Trait("Fluent", "Sql")]
         public void CanCRUDSqlFirewallRule()
         {
             using (var context = FluentMockContext.Start(this.GetType().FullName))

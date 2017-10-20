@@ -25,6 +25,7 @@ namespace Fluent.Tests
          * @param args the parameters
          */
         [Fact]
+        [Trait("Fluent", "KeyVault")]
         public void CanCRUDKeyVault()
         {
             using (var context = FluentMockContext.Start(GetType().FullName))

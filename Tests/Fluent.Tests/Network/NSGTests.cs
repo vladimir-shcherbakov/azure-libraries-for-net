@@ -17,6 +17,7 @@ namespace Fluent.Tests.Network
     {
 
         [Fact]
+        [Trait("Fluent", "Network")]
         public void CreateUpdate()
         {
             using (var context = FluentMockContext.Start(GetType().FullName))

@@ -12,6 +12,7 @@ namespace Fluent.Tests.Storage
     public class Usages
     {
         [Fact]
+        [Trait("Fluent", "Storage")]
         public void CanList()
         {
             using (var context = FluentMockContext.Start(this.GetType().FullName))

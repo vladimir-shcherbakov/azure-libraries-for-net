@@ -28,6 +28,7 @@ namespace Fluent.Tests.Network
         private static Region REGION = Region.USWest;
 
         [Fact]
+        [Trait("Fluent", "Network")]
         public void CreateUpdate()
         {
             using (var context = FluentMockContext.Start(GetType().FullName))
@@ -58,6 +59,7 @@ namespace Fluent.Tests.Network
         }
 
         [Fact]
+        [Trait("Fluent", "Network")]
         public void CanCreateSiteToSiteConnection()
         {
             using (var context = FluentMockContext.Start(GetType().FullName))
@@ -110,6 +112,7 @@ namespace Fluent.Tests.Network
         }
 
         [Fact]
+        [Trait("Fluent", "Network")]
         public void CanCreateVNetToVNetConnection()
         {
             using (var context = FluentMockContext.Start(GetType().FullName))

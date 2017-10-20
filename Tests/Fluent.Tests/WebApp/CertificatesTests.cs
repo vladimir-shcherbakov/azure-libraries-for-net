@@ -16,6 +16,7 @@ namespace Fluent.Tests.WebApp
         private static readonly string CertificateName = "javagoodcert319";
 
         [Fact(Skip = "Manual only: Test requires javacsmrg319 RG to be configured manually")]
+        [Trait("Fluent", "WebApp")]
         public void CanCRDCertificate()
         {
             using (var context = FluentMockContext.Start(this.GetType().FullName))

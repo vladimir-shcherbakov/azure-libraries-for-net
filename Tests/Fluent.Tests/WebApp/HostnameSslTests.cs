@@ -20,6 +20,7 @@ namespace Fluent.Tests.WebApp
     public class HostnameSsl
     {
         [Fact(Skip = "Manual only - Test requires javacsmrg9b9912262 RG to be configured manually")]
+        [Trait("Fluent", "WebApp")]
         public async Task CanBindHostnameAndSsl()
         {
             using (var context = FluentMockContext.Start(this.GetType().FullName))

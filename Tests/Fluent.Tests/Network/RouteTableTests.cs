@@ -15,6 +15,7 @@ namespace Fluent.Tests.Network
     public class RouteTable
     {
         [Fact]
+        [Trait("Fluent", "Network")]
         public void CreateUpdate()
         {
             using (var context = FluentMockContext.Start(GetType().FullName))

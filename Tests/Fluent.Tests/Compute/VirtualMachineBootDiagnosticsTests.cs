@@ -15,6 +15,7 @@ namespace Fluent.Tests.Compute.VirtualMachine
     public class BootDiagnostics
     {
         [Fact]
+        [Trait("Fluent", "Compute")]
         public void CanEnableWithImplicitStorageOnManagedVMCreation()
         {
             using (var context = FluentMockContext.Start(GetType().FullName))
@@ -44,6 +45,7 @@ namespace Fluent.Tests.Compute.VirtualMachine
         }
 
         [Fact]
+        [Trait("Fluent", "Compute")]
         public void CanEnableWithCreatableStorageOnManagedVMCreation()
         {
             using (var context = FluentMockContext.Start(GetType().FullName))
@@ -81,6 +83,7 @@ namespace Fluent.Tests.Compute.VirtualMachine
         }
 
         [Fact]
+        [Trait("Fluent", "Compute")]
         public void CanEnableWithExplicitStorageOnManagedVMCreation()
         {
             using (var context = FluentMockContext.Start(GetType().FullName))
@@ -119,6 +122,7 @@ namespace Fluent.Tests.Compute.VirtualMachine
         }
 
         [Fact]
+        [Trait("Fluent", "Compute")]
         public void CanDisable()
         {
             using (var context = FluentMockContext.Start(GetType().FullName))
@@ -156,6 +160,7 @@ namespace Fluent.Tests.Compute.VirtualMachine
         }
 
         [Fact]
+        [Trait("Fluent", "Compute")]
         public void ShouldUseOSUnManagedDiskImplicitStorage()
         {
             using (var context = FluentMockContext.Start(GetType().FullName))
@@ -188,6 +193,7 @@ namespace Fluent.Tests.Compute.VirtualMachine
         }
 
         [Fact]
+        [Trait("Fluent", "Compute")]
         public void ShouldUseUnManagedDisksExplicitStorage()
         {
             using (var context = FluentMockContext.Start(GetType().FullName))
@@ -227,6 +233,7 @@ namespace Fluent.Tests.Compute.VirtualMachine
         }
 
         [Fact]
+        [Trait("Fluent", "Compute")]
         public void CanEnableWithImplicitStorageOnUnManagedVMCreation()
         {
             using (var context = FluentMockContext.Start(GetType().FullName))
@@ -274,6 +281,7 @@ namespace Fluent.Tests.Compute.VirtualMachine
         }
 
         [Fact]
+        [Trait("Fluent", "Compute")]
         public void CanEnableWithCreatableStorageOnUnManagedVMCreation()
         {
             using (var context = FluentMockContext.Start(GetType().FullName))

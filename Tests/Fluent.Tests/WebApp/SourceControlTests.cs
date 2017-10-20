@@ -17,6 +17,7 @@ namespace Fluent.Tests.WebApp
     public class SourceControl
     {
         [Fact]
+        [Trait("Fluent", "WebApp")]
         public async Task CanDeploySourceControl()
         {
             using (var context = FluentMockContext.Start(this.GetType().FullName))

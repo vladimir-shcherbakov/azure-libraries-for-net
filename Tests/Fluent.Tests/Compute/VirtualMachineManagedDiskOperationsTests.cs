@@ -19,6 +19,7 @@ namespace Fluent.Tests.Compute.VirtualMachine
         private readonly KnownLinuxVirtualMachineImage LinuxImage = KnownLinuxVirtualMachineImage.UbuntuServer16_04_Lts;
 
         [Fact]
+        [Trait("Fluent", "Compute")]
         public void CanCreateVirtualMachineFromPIRImageWithManagedOsDisk()
         {
             using (var context = FluentMockContext.Start(GetType().FullName))
@@ -82,6 +83,7 @@ namespace Fluent.Tests.Compute.VirtualMachine
         }
 
         [Fact]
+        [Trait("Fluent", "Compute")]
         public void CanCreateUpdateVirtualMachineWithEmptyManagedDataDisks()
         {
             using (var context = FluentMockContext.Start(GetType().FullName))
@@ -257,6 +259,7 @@ namespace Fluent.Tests.Compute.VirtualMachine
         }
 
         [Fact]
+        [Trait("Fluent", "Compute")]
         public void CanCreateVirtualMachineFromCustomImageWithManagedDisks()
         {
             using (var context = FluentMockContext.Start(GetType().FullName))
@@ -439,6 +442,7 @@ namespace Fluent.Tests.Compute.VirtualMachine
         }
 
         [Fact]
+        [Trait("Fluent", "Compute")]
         public void CanUpdateVirtualMachineByAddingAndRemovingManagedDisks()
         {
             using (var context = FluentMockContext.Start(GetType().FullName))

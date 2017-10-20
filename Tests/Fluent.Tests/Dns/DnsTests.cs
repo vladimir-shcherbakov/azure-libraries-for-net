@@ -16,6 +16,7 @@ namespace Fluent.Tests.Dns
     public class ZoneRecordSet
     {
         [Fact]
+        [Trait("Fluent", "Dns")]
         public void CanCreateUpdate()
         {
             using (var context = FluentMockContext.Start(GetType().FullName))

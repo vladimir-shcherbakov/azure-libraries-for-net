@@ -20,6 +20,7 @@ namespace Fluent.Tests.Network
     public class NetworkInterface
     {
         [Fact]
+        [Trait("Fluent", "Network")]
         public void CanUseMultipleIPConfigs()
         {
             using (var context = FluentMockContext.Start(GetType().FullName))
@@ -215,6 +216,7 @@ namespace Fluent.Tests.Network
         }
 
         [Fact]
+        [Trait("Fluent", "Network")]
         public void CreateUpdate()
         {
             using (var context = FluentMockContext.Start(GetType().FullName))
@@ -299,6 +301,7 @@ namespace Fluent.Tests.Network
         }
 
         [Fact]
+        [Trait("Fluent", "Network")]
         public void CreateBatchOfNetworkInterfaces()
         {
             using (var context = FluentMockContext.Start(GetType().FullName))

@@ -17,6 +17,7 @@ namespace Fluent.Tests
     {
 
         [Fact]
+        [Trait("Fluent", "Redis")]
         public void CanCRUDRedisCache()
         {
             using (var context = FluentMockContext.Start(this.GetType().FullName))

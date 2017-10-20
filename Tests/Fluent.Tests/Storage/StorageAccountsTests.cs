@@ -16,6 +16,7 @@ namespace Fluent.Tests.Storage
     public class StorageAccounts
     {
         [Fact]
+        [Trait("Fluent", "Storage")]
         public void CanCheckAvailabilityAndCreate()
         {
             using (var context = FluentMockContext.Start(this.GetType().FullName))
@@ -79,6 +80,7 @@ namespace Fluent.Tests.Storage
         }
 
         [Fact]
+        [Trait("Fluent", "Storage")]
         public void CanCreateWithKindSkuAndUpdateAccessTier()
         {
             using (var context = FluentMockContext.Start(this.GetType().FullName))
@@ -120,6 +122,7 @@ namespace Fluent.Tests.Storage
         }
 
         [Fact]
+        [Trait("Fluent", "Storage")]
         public void CanGetAndRegenerateKeys()
         {
             using (var context = FluentMockContext.Start(this.GetType().FullName))
@@ -164,6 +167,7 @@ namespace Fluent.Tests.Storage
         }
 
         [Fact]
+        [Trait("Fluent", "Storage")]
         public void CanEnableDisableEncryption()
         {
             using (var context = FluentMockContext.Start(this.GetType().FullName))

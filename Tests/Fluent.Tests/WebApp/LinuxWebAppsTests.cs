@@ -15,6 +15,7 @@ namespace Fluent.Tests.WebApp
     public class LinuxWebApps
     {
         [Fact]
+        [Trait("Fluent", "WebApp")]
         public void CanCRUDLinuxWebApp()
         {
             using (var context = FluentMockContext.Start(this.GetType().FullName))

@@ -17,6 +17,7 @@ namespace Fluent.Tests.ResourceManager
     public class Providers
     {
         [Fact]
+        [Trait("Fluent", "ResourceManager")]
         public void CanRegisterAndUnRegisterProvider()
         {
             using (var context = FluentMockContext.Start(GetType().FullName))

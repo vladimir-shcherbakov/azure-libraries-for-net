@@ -25,6 +25,7 @@ namespace Fluent.Tests.Compute.VirtualMachine
         private const string VMName = "chashvm";
 
         [Fact]
+        [Trait("Fluent", "Compute")]
         public void CanCreateWithNetworking()
         {
             using (var context = FluentMockContext.Start(GetType().FullName))
@@ -107,6 +108,7 @@ namespace Fluent.Tests.Compute.VirtualMachine
         }
 
         [Fact]
+        [Trait("Fluent", "Compute")]
         public void CanCreate()
         {
             using (var context = FluentMockContext.Start(GetType().FullName))
@@ -172,6 +174,7 @@ namespace Fluent.Tests.Compute.VirtualMachine
         }
 
         [Fact]
+        [Trait("Fluent", "Compute")]
         public void CanCreateWithRelatedResourcesInParallel()
         {
             using (var context = FluentMockContext.Start(GetType().FullName))
@@ -282,6 +285,7 @@ namespace Fluent.Tests.Compute.VirtualMachine
         }
 
         [Fact]
+        [Trait("Fluent", "Compute")]
         public void CanCreateWithCustomData()
         {
             using (var context = FluentMockContext.Start(GetType().FullName))
@@ -328,6 +332,7 @@ namespace Fluent.Tests.Compute.VirtualMachine
         }
 
         [Fact]
+        [Trait("Fluent", "Compute")]
         public void CanSShConnectToVirtualMachine()
         {
             using (var context = FluentMockContext.Start(GetType().FullName))
@@ -375,6 +380,7 @@ namespace Fluent.Tests.Compute.VirtualMachine
         }
 
         [Fact]
+        [Trait("Fluent", "Compute")]
         public void CanCreateWithExistingNetworkAndNewPIP()
         {
             // Test for https://github.com/Azure/azure-sdk-for-net/issues/3359
@@ -441,6 +447,7 @@ namespace Fluent.Tests.Compute.VirtualMachine
         }
 
         [Fact]
+        [Trait("Fluent", "Compute")]
         public void CanSetStorageAccountForUnmanagedDisk()
         {
             using (var context = FluentMockContext.Start(GetType().FullName))

@@ -14,6 +14,7 @@ namespace Fluent.Tests.WebApp
     public class AppServicePlans
     {
         [Fact]
+        [Trait("Fluent", "WebApp")]
         public void CanCRUDAppServicePlan()
         {
             using (var context = FluentMockContext.Start(this.GetType().FullName))

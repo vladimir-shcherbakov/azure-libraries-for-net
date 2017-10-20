@@ -19,6 +19,7 @@ namespace Fluent.Tests.Compute
     public class VirtualMachineEncryptionOperations
     {
         [Fact(Skip = "Manual only: Requires ServicePrincipal, KeyVault creation and association, requires SSH to vm and perform mounting")]
+        [Trait("Fluent", "Compute")]
         public void CanEncryptVirtualMachine()
         {
             using (var context = FluentMockContext.Start(GetType().FullName))

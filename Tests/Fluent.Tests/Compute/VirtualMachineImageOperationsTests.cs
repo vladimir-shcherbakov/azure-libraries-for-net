@@ -16,6 +16,7 @@ namespace Fluent.Tests.Compute.VirtualMachine
     public class Image
     {
         [Fact]
+        [Trait("Fluent", "Compute")]
         public void CanListAndGet()
         {
             using (var context = FluentMockContext.Start(GetType().FullName))

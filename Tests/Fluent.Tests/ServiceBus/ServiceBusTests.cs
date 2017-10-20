@@ -18,6 +18,7 @@ namespace Fluent.Tests
     public class ServiceBus
     {
         [Fact]
+        [Trait("Fluent", "ServiceBus")]
         public void CanCRUDOnSimpleNamespace()
         {
             using (var context = FluentMockContext.Start(this.GetType().FullName))
@@ -93,6 +94,7 @@ namespace Fluent.Tests
         }
 
         [Fact]
+        [Trait("Fluent", "ServiceBus")]
         public void CanCreateNamespaceThenCRUDOnQueue()
         {
             using (var context = FluentMockContext.Start(this.GetType().FullName))
@@ -190,6 +192,7 @@ namespace Fluent.Tests
         }
 
         [Fact]
+        [Trait("Fluent", "ServiceBus")]
         public void CanCreateDeleteQueueWithNamespace()
         {
             using (var context = FluentMockContext.Start(this.GetType().FullName))
@@ -249,6 +252,7 @@ namespace Fluent.Tests
         }
 
         [Fact]
+        [Trait("Fluent", "ServiceBus")]
         public void CanCreateNamespaceThenCRUDOnTopic()
         {
             using (var context = FluentMockContext.Start(this.GetType().FullName))
@@ -334,6 +338,7 @@ namespace Fluent.Tests
         }
 
         [Fact]
+        [Trait("Fluent", "ServiceBus")]
         public void CanCreateDeleteTopicWithNamespace()
         {
             using (var context = FluentMockContext.Start(this.GetType().FullName))
@@ -393,6 +398,7 @@ namespace Fluent.Tests
         }
 
         [Fact]
+        [Trait("Fluent", "ServiceBus")]
         public void CanOperateOnAuthorizationRules()
         {
             using (var context = FluentMockContext.Start(this.GetType().FullName))
@@ -520,6 +526,8 @@ namespace Fluent.Tests
         }
 
         [Fact]
+        [Trait("Fluent", "ServiceBus")]
+
         public void CanPerformOnNamespaceActions()
         {
             using (var context = FluentMockContext.Start(this.GetType().FullName))
@@ -539,6 +547,7 @@ namespace Fluent.Tests
         }
 
         [Fact]
+        [Trait("Fluent", "ServiceBus")]
         public void CanPerformCRUDOnSubscriptions()
         {
             using (var context = FluentMockContext.Start(this.GetType().FullName))

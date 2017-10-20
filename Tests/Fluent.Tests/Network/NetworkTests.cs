@@ -17,6 +17,7 @@ namespace Fluent.Tests.Network
     public class Network
     {
         [Fact]
+        [Trait("Fluent", "Network")]
         public void CreateUpdatePeering()
         {
             using (var context = FluentMockContext.Start(GetType().FullName))
@@ -127,6 +128,7 @@ namespace Fluent.Tests.Network
         }
 
         [Fact]
+        [Trait("Fluent", "Network")]
         public void CreateUpdate()
         {
             using (var context = FluentMockContext.Start(GetType().FullName))

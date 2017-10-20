@@ -26,6 +26,7 @@ namespace Fluent.Tests.ResourceManager
         private string contentVersion = "1.0.0.0";
 
         [Fact]
+        [Trait("Fluent", "ResourceManager")]
         public void CanCreateVirtualNetwork()
         {
             using (var context = FluentMockContext.Start(this.GetType().FullName))
@@ -76,6 +77,7 @@ namespace Fluent.Tests.ResourceManager
         }
 
         [Fact]
+        [Trait("Fluent", "ResourceManager")]
         public void CanCancelVirtualNetworkDeployment()
         {
             using (var context = FluentMockContext.Start(this.GetType().FullName))
@@ -98,6 +100,7 @@ namespace Fluent.Tests.ResourceManager
         }
 
         [Fact]
+        [Trait("Fluent", "ResourceManager")]
         public void CanUpdateVirtualNetworkDeployment()
         {
             using (var context = FluentMockContext.Start(this.GetType().FullName))

@@ -14,6 +14,7 @@ namespace Fluent.Tests.Compute
     {
 
         [Fact]
+        [Trait("Fluent", "Compute")]
         public void CanCRUDAvailabilitySet()
         {
             using (var context = FluentMockContext.Start(GetType().FullName))

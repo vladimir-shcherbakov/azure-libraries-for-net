@@ -16,6 +16,7 @@ namespace Fluent.Tests.Compute.VirtualMachine
     public class ExtensionImage
     {
         [Fact]
+        [Trait("Fluent", "Compute")]
         public void CanListExtensionImages()
         {
             using (var context = FluentMockContext.Start(GetType().FullName))
@@ -35,6 +36,7 @@ namespace Fluent.Tests.Compute.VirtualMachine
 
 
         [Fact]
+        [Trait("Fluent", "Compute")]
         public void CanGetExtensionTypeVersionAndImage()
         {
             using (var context = FluentMockContext.Start(GetType().FullName))
